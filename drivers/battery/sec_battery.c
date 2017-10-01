@@ -21,6 +21,14 @@ module_param(wl_polling, int, 0644);
 #define SEC_INPUT_VOLTAGE_5V	5
 #define SEC_INPUT_VOLTAGE_9V	9
 
+static unsigned int STORE_MODE_CHARGING_MAX = 90;
+static unsigned int STORE_MODE_CHARGING_MIN = 20;
+
+module_param_named(store_mode_max, STORE_MODE_CHARGING_MAX, uint, S_IWUSR | S_IRUGO);
+module_param_named(store_mode_min, STORE_MODE_CHARGING_MIN, uint, S_IWUSR | S_IRUGO);
+
+const char *charger_chip_name;
+
 bool sleep_mode = false;
 
 bool slate_mode_state;
