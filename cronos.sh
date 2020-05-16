@@ -39,7 +39,7 @@ CR_KERNEL=$CR_DIR/arch/arm64/boot/Image
 # Compiled dtb by dtbtool
 CR_DTB=$CR_DIR/boot.img-dtb
 # Kernel Name and Version
-CR_VERSION=RC1
+CR_VERSION=RC2
 CR_NAME=AresKernel
 # Thread count
 CR_JOBS=$(nproc --ignore=1)
