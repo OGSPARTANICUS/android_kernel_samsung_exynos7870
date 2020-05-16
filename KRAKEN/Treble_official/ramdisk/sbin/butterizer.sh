@@ -80,7 +80,7 @@ echo "30000" > /sys/devices/system/cpu/cpu4/cpufreq/interactives9/min_sample_tim
 echo "1" > /sys/devices/system/cpu/cpu4/cpufreq/interactives9/mode
 echo "20000" > /sys/devices/system/cpu/cpu4/cpufreq/interactives9/timer_rate
 echo "60000" > /sys/devices/system/cpu/cpu4/cpufreq/interactives9/timer_slack
-echo "80 343000:95 449000:90 546000:85 676000:85 757000:80 839000:80 902000:75 1014000:70 1144000:65 1248000:65 1352000:65 1482000:60 1586000:45 1690000:99 1794000:100 1924000:100" > /sys/devices/system/cpu/cpu4/cpufreq/interactives9/target_loads
+echo "80 343000:95 449000:90 546000:85 676000:85 757000:80 839000:80 902000:75 1014000:70 1144000:65 1248000:65 1352000:65 1482000:60 1586000:45 1690000:99 1794000:100" > /sys/devices/system/cpu/cpu4/cpufreq/interactives9/target_loads
 #echo "0" > /sys/devices/system/cpu/cpu4/cpufreq/thunderstorm/above_hispeed_delay
 #echo "1" > /sys/devices/system/cpu/cpu4/cpufreq/thunderstorm/boost
 #echo "1" > /sys/devices/system/cpu/cpu4/cpufreq/thunderstorm/boostpulse
