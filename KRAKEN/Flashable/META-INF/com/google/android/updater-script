@@ -48,36 +48,36 @@ delete("/system/lib/libvkjni.so");
 ui_print("Target: Detecting phone model, please wait...");
 if is_substring("A320", getprop("ro.boot.bootloader")) then
     ui_print("Target: A3 2017 detected, extracting files...");
-    package_extract_file("KRAKEN/device/a3y17lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
+    package_extract_file("ARES/device/a3y17lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
 endif;
 if is_substring("J530", getprop("ro.boot.bootloader")) then
     ui_print("Target: J530 2017 detected, extracting files...");
-    package_extract_file("KRAKEN/device/j5y17lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
+    package_extract_file("ARES/device/j5y17lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
 endif;
 if is_substring("J730", getprop("ro.boot.bootloader")) then
     ui_print("Target: J7 2017 detected, extracting files...");
-    package_extract_file("KRAKEN/device/j7y17lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
+    package_extract_file("ARES/device/j7y17lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
 endif;
 if is_substring("G610", getprop("ro.boot.bootloader")) then
     ui_print("Target: J7 Prime detected, extracting files...");
-    package_extract_file("KRAKEN/device/on7xelte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
+    package_extract_file("ARES/device/on7xelte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
 endif;
 if is_substring("J710", getprop("ro.boot.bootloader")) then
     ui_print("Target: J7 2016 detected, extracting files...");
-    package_extract_file("KRAKEN/device/j7xelte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
+    package_extract_file("ARES/device/j7xelte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
 endif;
 if is_substring("J701", getprop("ro.boot.bootloader")) then
     ui_print("Target: J7 NXT detected, extracting files...");
-    package_extract_file("KRAKEN/device/j7velte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
+    package_extract_file("ARES/device/j7velte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
 endif;
 if is_substring("J600", getprop("ro.boot.bootloader")) then
     ui_print("Target: J6 2018 detected, extracting files...");
-    package_extract_file("KRAKEN/device/j6lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
+    package_extract_file("ARES/device/j6lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
 endif;
 if is_substring("A600", getprop("ro.boot.bootloader")) then
     ui_print("Target: A6 2018 detected, extracting files...");
-    package_extract_file("KRAKEN/device/a6lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
+    package_extract_file("ARES/device/a6lte/boot.img", "/dev/block/platform/13540000.dwmmc0/by-name/BOOT");
 endif;
-package_extract_dir("KRAKEN/system", "/system");
-package_extract_dir("KRAKEN/vendor", "/vendor");
+package_extract_dir("ARES/system", "/system");
+package_extract_dir("ARES/vendor", "/vendor");
 unmount("/system");
