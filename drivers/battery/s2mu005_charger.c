@@ -97,6 +97,8 @@ static void s2mu005_set_fast_charging_current(struct i2c_client *i2c,
 		int charging_current);
 static int s2mu005_get_charging_health(struct s2mu005_charger_data *charger);
 
+bool unstable_power_detection = true;
+
 static void s2mu005_test_read(struct i2c_client *i2c)
 {
 	static int reg_list[] = {
@@ -304,7 +306,7 @@ static void s2mu005_set_input_current_limit(struct s2mu005_charger_data *charger
 	pr_info("[DEBUG]%s: current  %d \n", __func__, charging_current);
 	if (charging_current <= 100)
 		data = 0;
-	else if (charging_current >= 100 && charging_current <= 2600)
+	else if (charging_current >= 100 || !unstable_power_detection && charging_current <= 2600)
 		data = (charging_current - 100) / 50;
 	else
 		data = 0x3F;
