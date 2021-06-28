@@ -1,3 +1,5 @@
+### I forbid the distribution of this specific kernel source under different name, stop stealing it and just renaming it as it's something you made. Do something your own selfs and stop being cancer, this kernel already exists cut the bullcrap and the steals.         
+         
          Linux kernel release 3.x <http://kernel.org/>
 
 These are the release notes for Linux version 3.  Read them carefully,
